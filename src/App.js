@@ -63,8 +63,19 @@ const Experience = ({ experience }) => {
 const Education = ({ education }) => {
   return (
     <div className='education'>
-      <h3>education.name</h3>
-      <p>toto</p>
+        <div className='intro'>
+          <p id='title'>
+            <b><a className='blue' href={education.link}>{education.name}</a></b>
+          </p>
+          <p id='info'>
+            <i class="fas fa-map-marker-alt"></i> {education.city} &nbsp; <i class="fas fa-calendar-alt"></i> {education.date}
+          </p>
+        </div>
+        <div className='description'>
+          <ul>
+            {education.description}
+          </ul>
+        </div>
     </div>
   )
 }

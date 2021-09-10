@@ -50,6 +50,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
+        margin-bottom: 20px;
 
         .text{
 
@@ -110,7 +111,7 @@
           display: flex;
           .logo{
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             width: 13%;
 
@@ -143,6 +144,7 @@
             }
 
             .description{
+              text-align: justify;
               ul{
                 padding-left: 10px;
 
@@ -154,7 +156,46 @@
           }
         }
 
+        .education{
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+
+          .intro{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 3px;
+
+            #title{
+              font-size: 14px;
+                a{
+                  font-weight: 400;
+                }
+            }
+
+            #info{
+              margin-top: 3px;
+              font-size: 11px;
+              color: var(--gray3);
+            }
+          }
+
+          .description{
+            text-align: justify;
+            ul{
+              padding-left: 10px;
+
+              li{
+                padding-bottom: 1px;
+              }
+            }
+          }
+        }
       }
+
+      
     }
 
   }

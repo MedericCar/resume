@@ -26,16 +26,16 @@ const experienceData = [
     companyLink: 'https://www.linkedin.com/company/factonics/about/',
     logo: {
       path: factonicsLogo,
-      width: 'calc(0.2 * 200px)',
-      height: 'calc(0.2 * 200px)'
+      width: 'calc(0.23 * 200px)',
+      height: 'calc(0.23 * 200px)'
     },
     city: 'Paris',
     date: 'Sep 2020 - Feb 2021 · 6 mth',
     description: [
-      <li>Improvement of the <b>ML development workflow</b> succesfully reducing the time from hours to a few minutes : added an algorithm registration tool for Data Scientists, standardized model building through Docker.</li>,
-      <li>Implementation a simple deployment pipeline on AWS.</li>,
-      <li>Development of a <b>Named-entity recognition </b>program specific to the French health system.</li>,
-      <li>Confirmed partnership with <a href='https://www.bpifrance.fr/'>BPI France</a> (French public investment bank) through a Proof of Concept for a <b>newsletter recommendation</b> system on behalf of .</li>,
+      <li>Simplified the <b>ML development workflow</b>, successfully reducing the integration time from hours to minutes : added an algorithm registration tool for Data Scientists, standardized model building through <i>Docker</i>.</li>,
+      <li>Implemented a simple <b>deployment pipeline</b> on <i>AWS</i>.</li>,
+      <li>Developed a <b>medical document classification</b> system leveraging Named-entity recognition for French hospitals.</li>,
+      <li>Obtained partnership with <b><a className='blue' href='https://www.bpifrance.fr/'>BPI France</a></b> (French public investment bank) for a <b>newsletter recommendation</b> system : recovered 30 GB of data from the <a href='https://www.oracle.com/cx/marketing/automation/'><i>Eloqua API</i></a>, analysed it to identify key profiles and opportunities.</li>,
     ],
   },
   {
@@ -50,10 +50,9 @@ const experienceData = [
     city: 'Paris',
     date: 'May 2019 - Aug 2019 · 4 mth',
     description: [
-      <li>Cognitive Machine Learning research team</li>,
-      <li>Benchmarking of the <u><a href='https://divime.readthedocs.io/en/latest/initial_questions.html#what-is-the-aclew-divime'>DiViMe</a></u> speech processing tool.</li>,
-      <li>Implementation of the <u><a href='https://www.sciencedirect.com/science/article/pii/S0167639318304205'>automatic word count estimation algorithm</a></u> (Räsänen, Okko, et al., 2019).</li>,
-      <li>Tags: <b>MATLAB, Python, Docker</b></li>
+      <li>Worked in the Cognitive Machine Learning research team.</li>,
+      <li>Benchmarked the <b className='blue'><a href='https://divime.readthedocs.io/en/latest/initial_questions.html#what-is-the-aclew-divime'>DiViMe</a></b> speech processing tools.</li>,
+      <li>Implemented the <i><a href='https://www.sciencedirect.com/science/article/pii/S0167639318304205'>automatic word count estimation algorithm</a></i> (Räsänen, Okko, et al., 2019) and dockerized it for integration.</li>,
     ]
   },
 
@@ -61,11 +60,84 @@ const experienceData = [
 ]
 
 const educationData = [
-
+  {
+    name: 'EPITA - École Pour l\'Informatique et les Techniques Avancées',
+    link: 'https://www.epita.fr/',
+    city: 'Paris',
+    date: 'Sep 2017 - Aug 2022',
+    description: [
+      <li>Master in Computer Science with a specialization in <b>Image Processing and Computer Graphics</b>.</li>,
+      <li>Acquired skills essential to Computer Science and Software Engineering.</li>,
+    ]
+  },
+  {
+    name: 'Tampere University',
+    link: 'https://www.tuni.fi/en/about-us/tampere-university',
+    city: 'Tampere, Finland',
+    date: 'Jan 2019 - May 2019',
+    description: [
+      <li>Exchange semester.</li>,
+      <li>Courses on Machine Learning, Signal Compression, Software Engineering methodologies.</li>,
+    ]
+  }
 ]
 
 const projectsData = [
-
+  {
+    title: 'Robot Surface Detection',
+    description: (
+      <div>
+        <p><b>Kaggle competition</b> : recognize floor surfaces using data collected from Inertial Sensors.</p>
+        <p><b>Third team</b> out of 105.</p>
+      </div>
+    ),
+    link: 'https://www.kaggle.com/c/robotsurface/overview',
+  },
+  {
+    title: 'Tiger Compiler',
+    description: (
+      <div>
+        <p>Semester long school project to build the <b>frontend of a Tiger compiler</b></p>
+      </div>
+    ),
+    link: 'https://assignments.lrde.epita.fr/index.html',
+  },
+  {
+    title: 'Path tracer',
+    description: (
+      <p>
+        Path tracing in C++ for Physically Based Rendering. <b>CPU parallelized</b> and optimized with <b>Bounding Volume Hierarchy</b>.
+      </p>
+    ),
+    link: 'https://github.com/MedericCar/pathtracer',
+  },
+  {
+    title: 'Personal website',
+    description: (
+      <p>
+        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
+      </p>
+    ),
+    link: 'https://github.com/MedericCar/portfolio',
+  },
+  {
+    title: 'Personal website',
+    description: (
+      <p>
+        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
+      </p>
+    ),
+    link: 'https://github.com/MedericCar/portfolio',
+  },
+  {
+    title: 'Personal website',
+    description: (
+      <p>
+        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
+      </p>
+    ),
+    link: 'https://github.com/MedericCar/portfolio',
+  },
 ]
 
 const skillsData = {
