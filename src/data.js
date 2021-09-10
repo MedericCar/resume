@@ -30,7 +30,7 @@ const experienceData = [
       height: 'calc(0.23 * 200px)'
     },
     city: 'Paris',
-    date: 'Sep 2020 - Feb 2021 · 6 mth',
+    date: 'Sep 2020 - Feb 2021',
     description: [
       <li>Simplified the <b>ML development workflow</b>, successfully reducing the integration time from hours to minutes : added an algorithm registration tool for Data Scientists, standardized model building through <i>Docker</i>.</li>,
       <li>Implemented a simple <b>deployment pipeline</b> on <i>AWS</i>.</li>,
@@ -48,7 +48,7 @@ const experienceData = [
       height: 'calc(0.25 * 230px)'
     },
     city: 'Paris',
-    date: 'May 2019 - Aug 2019 · 4 mth',
+    date: 'May 2019 - Aug 2019',
     description: [
       <li>Worked in the Cognitive Machine Learning research team.</li>,
       <li>Benchmarked the <b className='blue'><a href='https://divime.readthedocs.io/en/latest/initial_questions.html#what-is-the-aclew-divime'>DiViMe</a></b> speech processing tools.</li>,
@@ -144,16 +144,31 @@ const projectsData = [
 ]
 
 const skillsData = {
-  programming: [
-    {
-      name: 'hello' 
-    }
-  ],
-  tools: [
-    {
-      name: 'hello' 
-    }
-  ],
+  programming: {
+    preferred: ['C++', 'JavaScript', 'Python'],
+    knowledge: ['C', 'Java', 'CUDA'],
+    interested: ['Rust']
+  },
+  image: {
+    preferred: [],
+    knowledge: ['Keras', 'Numpy', 'Sklearn', 'Skimage', 'OpenCV'],
+    interested: ['Pytorch']
+  },
+  web: {
+    preferred: [],
+    knowledge: ['React'],
+    interested: []
+  },
+  rendering: {
+    preferred: [],
+    knowledge: ['OpenGL', 'GLSL', 'Three.js', 'WebGL'],
+    interested: ['Vulkan', 'WebGPU']
+  },
+  tools: {
+    preferred: [],
+    knowledge: ['Docker', 'Git', 'AWS', 'Shell'],
+    interested: ['Kubernetes']
+  }
 }
 
 
