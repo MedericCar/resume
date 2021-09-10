@@ -5,23 +5,23 @@ import './app.scss'
 const Socials = () => {
   return (
     <div className='socials'>
-      <a href='https://github.com/MedericCar' title='Github'>
+      <a className='blue' href='https://github.com/MedericCar' title='Github'>
         <i class="fab fa-github"></i>
         <p>MedericCar</p>
       </a>
-      <a href='mailto: carriatmederic@gmail.com' title='Mail'>
+      <a className='blue' href='mailto: carriatmederic@gmail.com' title='Mail'>
         <i class="far fa-envelope"></i>
         <p>carriatmederic@gmail.com</p>
       </a>
-      <a href='https://www.linkedin.com/in/m%C3%A9d%C3%A9ric-carriat-17705a181/' title='LinkedIn'>
+      <a className='blue' href='https://www.linkedin.com/in/m%C3%A9d%C3%A9ric-carriat-17705a181/' title='LinkedIn'>
         <i class="fab fa-linkedin"></i>
         <p>Médéric Carriat</p>
       </a>
-      <a href='https://www.medericcarriat.com/' title='Personal website'>
+      <a className='blue' href='https://www.medericcarriat.com/' title='Personal website'>
         <i class="fas fa-globe-europe"></i>
         <p>medericcarriat.com</p>
       </a>
-      <a href='tel:+33676216087' title='Phone'>
+      <a className='blue' href='tel:+33676216087' title='Phone'>
         <i class="fas fa-phone-alt"></i> 
         <p>+33 6 76 21 60 87</p>
       </a>
@@ -95,11 +95,17 @@ function App() {
   return (
     <div className='app'>
       <div className='resume'>
-        <div className='text'>
+        <div className='body'>
 
-          <div className="header">
-            <h3>Médéric Carriat</h3>
-            <p>Software Engineer looking for a 6-month internship starting in February 2022</p>
+          <div className='header'>
+            <div className='text'>
+              <h3 className='blue'>Médéric Carriat</h3>
+              <p>
+                Software Engineer looking for
+                a <b>6-month internship</b> starting 
+                in <b>February 2022</b>
+              </p>
+            </div>
             <Socials/>
             <span className='vertical-bar'/>
           </div>

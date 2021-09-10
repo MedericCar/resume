@@ -1,42 +1,76 @@
 .app{
-  background-color: #f7f7f7;
+
+  --bg: #f7f7f7;
+  --gray1: #1c1c1c;
+  --gray2: #494949;
+  --gray3: #969696;
+  --gray4: #e7e7e7;
+  --gray5: #fff;
+  --gradient1: rgb(151, 218, 251);
+  --gradient2: rgb(109, 131, 255);
+  
+  .blue {
+    background: --var(--gradient1);
+    background: linear-gradient(-190deg, var(--gradient1) 0%, var(--gradient2) 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  background-color: var(--bg);
+  color: var(--gray1);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: fit-content;
 
+
   .resume{
     display: block;
     margin: 2% auto;
-    background-color: #fff;
+    background-color: var(--gray5);
     width: 21cm;
     height: 29.7cm; 
     overflow: scroll;
 
-    .text{
-      width: 90%;
-      height: 90%;
-      margin: auto;
+    .body{
+      padding: 2% 5%;
 
       .header{
         width: 100%;
-        height: 15%;
+        height: 3cm;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: space-around;
 
-        h3{
-          font-size: 25px;
+        .text{
+
+          h3{
+            font-size: 45px;
+            font-weight: 600;
+          }
+
+          p{
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--gray2);
+          }
         }
+
+
 
         .socials{
           width: 100%;
           display: flex;
           flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
+          align-items: flex-start;
+          justify-content: space-between;
 
           a{
             width: fit-content;
@@ -49,10 +83,16 @@
             }
 
             p{
-              font-size: 9px;
+              font-size: 11px;
+              font-weight: 100%;
             }
           }
 
+        }
+
+        .vertical-bar{
+          width: 21cm;
+          //border-bottom: var(--gradient2) 1px solid;
         }
 
 
