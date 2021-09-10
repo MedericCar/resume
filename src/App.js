@@ -32,16 +32,30 @@ const Socials = () => {
 const Experience = ({ experience }) => {
   return (
     <div className='experience'>
-      <img className='logo' src={experience.logo} alt='company-logo'/>
-
-      <div className='title'>
-        <p>{experience.title} at {experience.company}</p>
-        <p>
-          <i class="fas fa-map-marker-alt"></i> {experience.city} <i class="fas fa-calendar-alt"></i> {experience.date}
-        </p>
+      <div className='logo'>
+        <img
+          src={experience.logo.path}
+          style={{width: experience.logo.width, height: experience.logo.height}}
+          alt='company-logo'
+        />
       </div>
 
-      {experience.description}
+      <div className='text'>
+        <div className='intro'>
+          <p id='title'>
+            <b>{experience.title}</b> at <a className='blue' href={experience.companyLink}>{experience.company}</a>
+          </p>
+          <p id='info'>
+            <i class="fas fa-map-marker-alt"></i> {experience.city} &nbsp; <i class="fas fa-calendar-alt"></i> {experience.date}
+          </p>
+        </div>
+        <div className='description'>
+          <ul>
+            {experience.description}
+          </ul>
+        </div>
+      </div>
+
     </div>
   )
 }
@@ -107,7 +121,6 @@ function App() {
               </p>
             </div>
             <Socials/>
-            <span className='vertical-bar'/>
           </div>
 
           <div className='sections'>
