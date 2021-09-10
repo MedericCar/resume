@@ -21,6 +21,11 @@
     color: inherit;
   }
 
+  a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--gradient2);
+  }
+
   background-color: var(--bg);
   color: var(--gray1);
   font-size: 12px;
@@ -107,8 +112,9 @@
         }
 
         .experience{
-          margin-top: 10px;
           display: flex;
+          margin-top: 5px;
+
           .logo{
             display: flex;
             align-items: flex-start;
@@ -159,7 +165,7 @@
         .education{
           display: flex;
           flex-direction: column;
-          margin-top: 10px;
+          margin-top: 5px;
 
           .intro{
             display: flex;
@@ -192,6 +198,29 @@
               }
             }
           }
+        }
+
+        .projects{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          height: 5cm;
+
+          .project{
+            margin-top: 5px;
+            width: 30%;
+            height: 40%;
+            text-align: justify;
+
+            #title{
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+
+
         }
       }
 

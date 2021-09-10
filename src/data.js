@@ -85,10 +85,10 @@ const educationData = [
 const projectsData = [
   {
     title: 'Robot Surface Detection',
+    typeLogo: <i class="fab fa-kaggle"></i>,
     description: (
       <div>
-        <p><b>Kaggle competition</b> : recognize floor surfaces using data collected from Inertial Sensors.</p>
-        <p><b>Third team</b> out of 105.</p>
+        <p>Kaggle competition: recognize floor surfaces using data collected from Inertial Sensors. Third team out of 105.</p>
       </div>
     ),
     link: 'https://www.kaggle.com/c/robotsurface/overview',
@@ -97,43 +97,46 @@ const projectsData = [
     title: 'Tiger Compiler',
     description: (
       <div>
-        <p>Semester long school project to build the <b>frontend of a Tiger compiler</b></p>
+        <p>Semester long school project to build the frontend of a Tiger compiler in C++.</p>
       </div>
     ),
     link: 'https://assignments.lrde.epita.fr/index.html',
   },
   {
     title: 'Path tracer',
+    typeLogo: <i class="fab fa-github"></i>,
     description: (
       <p>
-        Path tracing in C++ for Physically Based Rendering. <b>CPU parallelized</b> and optimized with <b>Bounding Volume Hierarchy</b>.
+        Path tracing in C++ for Physically Based Rendering. CPU parallelized and optimized with Bounding Volume Hierarchy.
       </p>
     ),
     link: 'https://github.com/MedericCar/pathtracer',
   },
   {
-    title: 'Personal website',
+    title: 'Optimized k-means',
     description: (
       <p>
-        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
+        Implementation of two improvements of the original algorithm: <i>k-means++</i> and <i>Elkan</i>.
       </p>
     ),
-    link: 'https://github.com/MedericCar/portfolio',
+    link: 'https://github.com/MedericCar/',
+  },
+  {
+    title: 'Bar code detection',
+    typeLogo: <i class="fab fa-github"></i>,
+    description: (
+      <p>
+        CUDA versions of the Histogram of Gradients computation and k-means classification.
+      </p>
+    ),
+    link: 'https://github.com/MedericCar/',
   },
   {
     title: 'Personal website',
+    typeLogo: <i class="fab fa-github"></i>,
     description: (
       <p>
-        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
-      </p>
-    ),
-    link: 'https://github.com/MedericCar/portfolio',
-  },
-  {
-    title: 'Personal website',
-    description: (
-      <p>
-        Website made from scratch in <b>functional React</b>. Features a <b>homepage 3D animation</b>.
+        Website made in React without any library. Includes a shader for the homepage animation.
       </p>
     ),
     link: 'https://github.com/MedericCar/portfolio',

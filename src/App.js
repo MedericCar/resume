@@ -83,8 +83,10 @@ const Education = ({ education }) => {
 const Project = ({ project }) => {
   return (
     <div className='project'>
-      <h3>project.name</h3>
-      <p>toto</p>
+      <a className='blue' id='title' href={project.link}>
+        {project.typeLogo} {project.title}
+      </a>
+      <div id='description'>{project.description}</div>
     </div>
   )
 }
@@ -148,7 +150,9 @@ function App() {
 
             <div className='section-projects'>
               <h2>Projects</h2>
-              {projectsData.map(proj => <Project project={proj}/>)}
+              <div className='projects'>
+                {projectsData.map(proj => <Project project={proj}/>)}
+              </div>
             </div>
 
             <div className='section-skills'>
