@@ -1,0 +1,64 @@
+.app{
+  background-color: #f7f7f7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+
+  .resume{
+    display: block;
+    margin: 2% auto;
+    background-color: #fff;
+    width: 21cm;
+    height: 29.7cm; 
+    overflow: scroll;
+
+    .text{
+      width: 90%;
+      height: 90%;
+      margin: auto;
+
+      .header{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{
+          font-size: 25px;
+        }
+
+        .socials{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+
+          a{
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+
+            i{
+              font-size: 13px;
+              margin-right: 3px;
+            }
+
+            p{
+              font-size: 9px;
+            }
+          }
+
+        }
+
+
+      }
+    }
+
+  }
+
+}
