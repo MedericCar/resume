@@ -1,5 +1,4 @@
-.app{
-
+body{
   --bg: #f7f7f7;
   --gray1: #1c1c1c;
   --gray2: #3C3C3C;
@@ -15,7 +14,14 @@
   //--tag3-bg: rgb(236, 248, 255);
   //--tag3: rgb(35, 204, 255);
   --tag3: #5cdbc6;
+
+  background-color: var(--bg);
+}
   
+
+
+.app{
+
   .blue {
     background: --var(--gradient1);
     background: linear-gradient(-190deg, var(--gradient1) 0%, var(--gradient2) 100%); 
@@ -37,24 +43,22 @@
     font-weight: 400;
   }
 
-  background-color: var(--bg);
-  color: var(--gray1);
   font-size: 12px;
   font-weight: 200;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: fit-content;
 
 
   .resume{
     display: block;
     margin: 2% auto;
-    background-color: var(--gray5);
     width: 21cm;
     height: 29.7cm; 
     overflow: none;
+    background-color: var(--gray5) ;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     .body{

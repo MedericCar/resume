@@ -1,4 +1,3 @@
-import './App.css';
 import { experienceData, educationData, projectsData, skillsData } from './data.js'
 import './app.scss'
 
@@ -164,8 +163,8 @@ function App() {
             <div className='text'>
               <h3 className='blue'>Médéric Carriat</h3>
               <p>
-                Software Engineer looking for
-                a <b>6-month internship</b> starting 
+                Looking for
+                a <b>6-month end-of-studies internship</b> starting 
                 in <b>February 2022</b>
               </p>
             </div>

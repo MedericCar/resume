@@ -4,7 +4,7 @@ import siemensLogo from './assets/siemens.png'
 
 const experienceData = [
   {
-    title: 'Software Engineer, Visualization',
+    title: 'Software Engineer - Tutored project',
     company: 'Siemens Healthineers',
     companyLink: 'https://www.siemens-healthineers.com/',
     logo: {
