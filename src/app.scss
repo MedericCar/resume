@@ -33,6 +33,10 @@
     text-decoration-color: var(--gradient2);
   }
 
+  b{
+    font-weight: 400;
+  }
+
   background-color: var(--bg);
   color: var(--gray1);
   font-size: 12px;
@@ -50,7 +54,7 @@
     background-color: var(--gray5);
     width: 21cm;
     height: 29.7cm; 
-    overflow: scroll;
+    overflow: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     .body{
@@ -111,7 +115,7 @@
         margin-top: 10px;
 
         > *{
-          margin-top: 15px;
+          margin-top: 20px;
         }
 
         h2{
@@ -138,10 +142,13 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              margin-bottom: 3px;
+              margin-bottom: 2.5px;
 
               #title{
                 font-size: 14px;
+                b{
+                  font-weight: 500;
+                }
                  a{
                    font-weight: 400;
                  }
@@ -156,10 +163,10 @@
             .description{
               text-align: justify;
               ul{
-                padding-left: 10px;
+                padding-left: 17px;
 
                 li{
-                  padding-bottom: 1px;
+                  padding-bottom: 3px;
                 }
               }
             }
@@ -169,7 +176,7 @@
         .education{
           display: flex;
           flex-direction: column;
-          margin-top: 7px;
+          margin-top: 10px;
 
           .intro{
             display: flex;
@@ -195,7 +202,7 @@
           .description{
             text-align: justify;
             ul{
-              padding-left: 10px;
+              padding-left: 17px;
 
               li{
                 padding-bottom: 1px;
@@ -213,7 +220,7 @@
           height: 4.5cm;
 
           .project{
-            margin-top: 7px;
+            margin-top: 10px;
             width: 30%;
             height: 40%;
             text-align: justify;
@@ -271,7 +278,7 @@
           }
 
           .skills{
-            margin-top: 5px;
+            margin-top: 8px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -305,6 +312,26 @@
       
     }
 
+  }
+
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+      .blue {
+        background: none #fff;
+        -webkit-background-clip: border-box;
+        -webkit-text-fill-color: var(--tag2);
+        color:rgb(151, 218, 251);
+      }
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: -15px;
+    }
   }
 
 }

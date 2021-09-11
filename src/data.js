@@ -15,9 +15,9 @@ const experienceData = [
     city: 'Paris',
     date: 'Started Feb 2021 - Current',
     description: [
-      <li>Research of a web-based solution for performant <b>real-time transparency</b>.</li>,
-      <li>Implementation of <i><a href='https://luebke.us/publications/StochasticTransparency_I3D2010.pdf'>Stochastic Transparency</a></i> (Enderton, Eric, et al., 2010) for ThreeJS.</li>,
-      <li>Addition of denoising strategies to refine the results.</li>,
+      <li>Researched a web-based solution for efficient <b>real-time transparency</b>.</li>,
+      <li>Implemented <i><a href='https://luebke.us/publications/StochasticTransparency_I3D2010.pdf'>Stochastic Transparency</a></i> (Enderton, Eric, et al., 2010) for ThreeJS.</li>,
+      <li>Refined the results through diverse denoising strategies.</li>,
     ],
   },
   {
@@ -32,10 +32,10 @@ const experienceData = [
     city: 'Paris',
     date: 'Sep 2020 - Feb 2021',
     description: [
-      <li>Simplified the <b>ML development workflow</b>, successfully reducing the integration time from hours to minutes : added an algorithm registration tool for Data Scientists, standardized model building through <i>Docker</i>.</li>,
-      <li>Implemented a simple <b>deployment pipeline</b> on <i>AWS</i>.</li>,
+      <li>Simplified the <b>ML development workflow</b>, reducing the integration time from 1 hour to 5 minutes : added an algorithm registration tool for Data Scientists, standardized model building through <i>Docker</i>.</li>,
+      <li>Implemented a simple <b>algorithm deployment pipeline</b> on <i>AWS</i> to allow execution on the customer side.</li>,
       <li>Developed a <b>medical document classification</b> system leveraging Named-entity recognition for French hospitals.</li>,
-      <li>Obtained partnership with <b><a className='blue' href='https://www.bpifrance.fr/'>BPI France</a></b> (French public investment bank) for a <b>newsletter recommendation</b> system : recovered 30 GB of data from the <a href='https://www.oracle.com/cx/marketing/automation/'><i>Eloqua API</i></a>, analysed it to identify key profiles and opportunities.</li>,
+      <li>Secured a partnership with <b><a className='blue' href='https://www.bpifrance.fr/'>BPI France</a></b> (French public investment bank) for a <b>newsletter recommendation</b> system : recovered 30 GB of data from the <a href='https://www.oracle.com/cx/marketing/automation/'><i>Eloqua API</i></a>, led the data analysis to identify key profiles and opportunities.</li>,
     ],
   },
   {
@@ -50,9 +50,9 @@ const experienceData = [
     city: 'Paris',
     date: 'May 2019 - Aug 2019',
     description: [
-      <li>Worked in the Cognitive Machine Learning research team.</li>,
+      <li>Worked in the <b>Cognitive Machine Learning research</b> team.</li>,
       <li>Benchmarked the <b className='blue'><a href='https://divime.readthedocs.io/en/latest/initial_questions.html#what-is-the-aclew-divime'>DiViMe</a></b> speech processing tools.</li>,
-      <li>Implemented the <i><a href='https://www.sciencedirect.com/science/article/pii/S0167639318304205'>automatic word count estimation algorithm</a></i> (Räsänen, Okko, et al., 2019) and dockerized it for integration.</li>,
+      <li>Implemented the <i><a href='https://www.sciencedirect.com/science/article/pii/S0167639318304205'>automatic word count estimation algorithm</a></i> (Räsänen, Okko, et al., 2019) and dockerized it for integration to the product.</li>,
     ]
   },
 
@@ -87,7 +87,7 @@ const projectsData = [
     typeLogo: <i class="fab fa-kaggle"></i>,
     description: (
       <div>
-        <p>Kaggle competition: recognize floor surfaces using data collected from Inertial Sensors. Third team out of 105.</p>
+        <p>Kaggle competition: recognize floor surfaces using data collected from Inertial Sensors. Achieved third place out of 105.</p>
       </div>
     ),
     link: 'https://www.kaggle.com/c/robotsurface/overview',
@@ -96,7 +96,7 @@ const projectsData = [
     title: 'Tiger Compiler',
     description: (
       <div>
-        <p>Semester long school project to build the frontend of a Tiger compiler in C++.</p>
+        <p>Frontend of a Tiger compiler in C++ comprising all the stages up to the translation to high level intermediate representation.</p>
       </div>
     ),
     link: 'https://assignments.lrde.epita.fr/index.html',
@@ -115,7 +115,7 @@ const projectsData = [
     title: 'Optimized k-means',
     description: (
       <p>
-        Implementation of two improvements of the original algorithm: <i>k-means++</i> and <i>Elkan</i>.
+        Implementation of two improvements over the original k-means algorithm: <i>k-means++</i> and <i>Elkan</i>.
       </p>
     ),
     link: 'https://github.com/MedericCar/',

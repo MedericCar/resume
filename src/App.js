@@ -1,5 +1,4 @@
 import './App.css';
-import { Document, Page } from 'react-pdf';
 import { experienceData, educationData, projectsData, skillsData } from './data.js'
 import './app.scss'
 
@@ -155,9 +154,10 @@ const Skills = ({ skills }) => {
 
 
 function App() {
+
   return (
     <div className='app'>
-      <div className='resume'>
+      <div className='resume' id='section-to-print'>
         <div className='body'>
 
           <div className='header'>
