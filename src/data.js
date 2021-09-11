@@ -165,7 +165,7 @@ const skillsData = {
   },
   tools: {
     preferred: [],
-    knowledge: ['Docker', 'Git', 'AWS', 'Shell'],
+    knowledge: ['Docker', 'Git', 'AWS', 'Shell', 'Unity'],
     interested: ['Kubernetes']
   }
 }
