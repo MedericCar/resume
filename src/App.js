@@ -1,4 +1,5 @@
 import './App.css';
+import { Document, Page } from 'react-pdf';
 import { experienceData, educationData, projectsData, skillsData } from './data.js'
 import './app.scss'
 
@@ -121,15 +122,6 @@ const Skills = ({ skills }) => {
         </div>
       </div>
 
-      <div className='web'>
-        <h4>Web</h4>
-        <div className='tags'>
-          {skills['web']['preferred'].map(tag => <Tag type={'preferred'} tag={tag}/>)}
-          {skills['web']['knowledge'].map(tag => <Tag type={'knowledge'} tag={tag}/>)}
-          {skills['web']['interested'].map(tag => <Tag type={'interested'} tag={tag}/>)}
-        </div>
-      </div>
-
       <div className='rendering'>
         <h4>Rendering</h4>
         <div className='tags'>
@@ -145,6 +137,15 @@ const Skills = ({ skills }) => {
           {skills['tools']['preferred'].map(tag => <Tag type={'preferred'} tag={tag}/>)}
           {skills['tools']['knowledge'].map(tag => <Tag type={'knowledge'} tag={tag}/>)}
           {skills['tools']['interested'].map(tag => <Tag type={'interested'} tag={tag}/>)}
+        </div>
+      </div>
+
+      <div className='web'>
+        <h4>Web</h4>
+        <div className='tags'>
+          {skills['web']['preferred'].map(tag => <Tag type={'preferred'} tag={tag}/>)}
+          {skills['web']['knowledge'].map(tag => <Tag type={'knowledge'} tag={tag}/>)}
+          {skills['web']['interested'].map(tag => <Tag type={'interested'} tag={tag}/>)}
         </div>
       </div>
     
@@ -191,9 +192,18 @@ function App() {
             </div>
 
             <div className='section-skills'>
-              <h2>Skills</h2>
+              <div className='intro'>
+                <h2>Skills</h2>
+                <div className='indications'>
+                  <Tag type='preferred' tag='Preferred'/>
+                  <Tag type='knowledge' tag='Working knowledge'/>
+                  <Tag type='interested' tag='Interested'/>
+                </div>
+              </div>
+
               <Skills skills={skillsData}/>
             </div>
+
 
           </div>
 

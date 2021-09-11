@@ -76,7 +76,6 @@ const educationData = [
     city: 'Tampere, Finland',
     date: 'Jan 2019 - May 2019',
     description: [
-      <li>Exchange semester.</li>,
       <li>Courses on Machine Learning, Signal Compression, Software Engineering methodologies.</li>,
     ]
   }
@@ -156,7 +155,7 @@ const skillsData = {
   },
   web: {
     preferred: [],
-    knowledge: ['React'],
+    knowledge: ['React', 'Sass'],
     interested: []
   },
   rendering: {
