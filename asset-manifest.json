@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e61bb48.chunk.css",
-    "main.js": "/static/js/main.639458ed.chunk.js",
-    "main.js.map": "/static/js/main.639458ed.chunk.js.map",
+    "main.css": "/static/css/main.67d06216.chunk.css",
+    "main.js": "/static/js/main.d8ed6f1e.chunk.js",
+    "main.js.map": "/static/js/main.d8ed6f1e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.60681c82.js",
     "runtime-main.js.map": "/static/js/runtime-main.60681c82.js.map",
     "static/js/2.f7235a99.chunk.js": "/static/js/2.f7235a99.chunk.js",
     "static/js/2.f7235a99.chunk.js.map": "/static/js/2.f7235a99.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5e61bb48.chunk.css.map": "/static/css/main.5e61bb48.chunk.css.map",
+    "static/css/main.67d06216.chunk.css.map": "/static/css/main.67d06216.chunk.css.map",
     "static/js/2.f7235a99.chunk.js.LICENSE.txt": "/static/js/2.f7235a99.chunk.js.LICENSE.txt",
     "static/media/siemens.12bd77da.png": "/static/media/siemens.12bd77da.png"
   },
   "entrypoints": [
     "static/js/runtime-main.60681c82.js",
     "static/js/2.f7235a99.chunk.js",
-    "static/css/main.5e61bb48.chunk.css",
-    "static/js/main.639458ed.chunk.js"
+    "static/css/main.67d06216.chunk.css",
+    "static/js/main.d8ed6f1e.chunk.js"
   ]
 }
