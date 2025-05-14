@@ -166,7 +166,7 @@ const projectsData = [
     </svg>,
     description: (
       <p>
-        Website made in React without any library. Includes a shader for the homepage animation.
+        Website made in React featuring 3D animations. Attracted 10k visitors after a <b><a className='blue' href="https://www.reddit.com/r/reactjs/comments/pmu7yz/i_built_my_portfolio_to_learn_react_3d_animation/">popular post</a></b> on Reddit.
       </p>
     ),
     link: 'https://github.com/MedericCar/portfolio',
