@@ -62,16 +62,16 @@ body{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     .body{
-      padding: 2% 5%;
+      padding: 1.8% 5%;
 
       .header{
         width: 100%;
-        height: 3cm;
+        height: 2.8cm;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
         .text{
 
@@ -116,10 +116,10 @@ body{
       }
 
       .sections{
-        margin-top: 10px;
+        margin-top: 8px;
 
         > *{
-          margin-top: 20px;
+          margin-top: 15px;
         }
 
         h2{
@@ -129,24 +129,25 @@ body{
 
         .experience{
           display: flex;
-          margin-top: 15px;
+          margin-top: 14px;
 
           .logo{
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            width: 13%;
+            width: 12%;
+            min-height: 60px;
           }
 
           .text{
-            width: calc(100% - 13%);
+            width: calc(100% - 12%);
             padding-left: 5px;
 
             .intro{
               display: flex;
               align-items: center;
               justify-content: space-between;
-              margin-bottom: 2.5px;
+              margin-bottom: 4px;
 
               #title{
                 font-size: 14px;
@@ -168,9 +169,10 @@ body{
               text-align: justify;
               ul{
                 padding-left: 17px;
-
-                li{
-                  padding-bottom: 3px;
+                margin-top: 1px;
+                
+                li {
+                  padding-bottom: 4px;
                 }
               }
             }
@@ -180,14 +182,14 @@ body{
         .education{
           display: flex;
           flex-direction: column;
-          margin-top: 10px;
+          margin-top: 8px;
 
           .intro{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-between;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
 
             #title{
               font-size: 14px;
@@ -197,7 +199,7 @@ body{
             }
 
             #info{
-              margin-top: 3px;
+              margin-top: 2px;
               font-size: 11px;
               color: var(--gray3);
             }
@@ -205,12 +207,9 @@ body{
 
           .description{
             text-align: justify;
-            ul{
-              padding-left: 17px;
-
-              li{
-                padding-bottom: 1px;
-              }
+            
+            p {
+              margin: 4px 0;
             }
           }
         }
@@ -221,10 +220,10 @@ body{
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: flex-start;
-          height: 4.8cm;
+          height: 4.5cm;
 
           .project{
-            margin-top: 10px;
+            margin-top: 8px;
             width: 30%;
             height: 40%;
             text-align: justify;
@@ -232,23 +231,25 @@ body{
             #title{
               font-size: 14px;
               font-weight: 400;
+              white-space: nowrap;
+              overflow: visible;
             }
 
             #description{
-              margin-top: 2px;
+              margin-top: 1px;
             }
           }
         }
 
         .section-skills{
-          margin-top: 10px;
+          margin-top: 8px;
 
           .tag{
             font-size: 10px;
             font-weight: 500;
-            margin-top: 3px;
-            margin-right: 5px;
-            padding: 3px 3px;
+            margin-top: 2px;
+            margin-right: 4px;
+            padding: 2px 3px;
             border-radius: 4px;
 
             &.preferred{
@@ -274,24 +275,26 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            .indications{
-              display: flex;
-              flex-direction: row;
-            }
+          }
+          
+          .legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 5px 0 10px 0;
           }
 
           .skills{
-            margin-top: 8px;
+            margin-top: 6px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             width: 100%;
-            height: 3cm;
+            height: 2.8cm;
 
             > *{
               width: fit-content;
-              margin: 5px 0px;
+              margin: 4px 0px;
               
               h4{
                 font-size: 12px;
